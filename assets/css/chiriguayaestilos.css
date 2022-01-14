@@ -1,0 +1,147 @@
+
+.NameHotel{
+    width: 100%;
+    height: 15vh;
+    float:left;
+    background-color: #282828;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    text-align: center;
+    color: goldenrod;
+    
+}
+
+.ContenedorSuperiorP{
+    width: 100%;
+    float:left;
+    background-color: #fefeff;
+    padding: 1em;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    
+}
+.ContenedorSuperiorP img{
+    max-width: 100%;
+    
+   
+}
+.TextoIzquierda{
+    width: 100%;
+    height: 15vh;
+    float:left;
+    background-color:#282828;
+    border: 1px solid #000000;
+    font-style: italic;
+    color: goldenrod;
+    text-align: justify;
+    font-size: 115%;
+    font-family: Lato;
+      
+}
+.TextoIzquierda h2{
+    color: white;
+}
+.TextoCentral{
+    width: 100%;
+    height: 15vh;
+    float:left;
+    background-color:white;
+    border: 1px solid #000000;
+    font-style: italic;
+    color: #000000;
+    text-align: center;
+    font-size: 125%;
+    font-family: Lato;
+    
+}
+.PaquetesP{
+    width: 100%;
+    height: 10vh;
+    background-color:#FFF6DD;
+    border: 1px solid #000000;
+    float: right;
+    text-align: center;
+    font-style: italic;
+    color: goldenrod;
+    text-align: center;
+    font-size: 150%;
+    font-family: Lato;
+}
+
+img{
+    max-width: 100%;
+}
+.CajasPromociones{
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    float: left;
+    padding: 1em;
+    width:50%;
+    background-color: white;
+}
+.CajasPromociones h2{
+    font-size: 180%;
+    color: #1e1d1d;
+}
+.CajasPromociones p{
+    font-size: 104%;
+}
+
+#Caja1 {
+    
+    background-color: #FFF6DD;
+    text-align: center;
+    font-style: italic;
+    
+   
+}
+#Caja2 {
+    
+    background-color: #FFF6DD;
+    text-align: center;
+    font-style: italic;
+}
+#Caja3 {
+    
+    background-color: #FFF6DD;
+    text-align: center;
+    font-style: italic;
+}
+#Caja4 {
+    
+    background-color: #FFF6DD;
+    text-align: center;
+    font-style: italic;
+    
+}
+.items{
+    text-align: center;
+    align-items: center;
+    font-style: italic;
+    background-color: #FFF6DD;
+    
+}
+.items li{
+    font-size: 104%;
+}
+.BotonReservar{
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: goldenrod;
+    border-style: solid ;
+    border-radius: 10px;
+    align-items: center;
+    width: 25%;
+    float: right;
+    margin-right: 34%; 
+}
+.BotonReservar a{
+    text-decoration: none;
+    color: #000000;
+}
+.BotonReservar:hover{
+    color: #082032;
+    background-color: #eaeaea;
+    
+}

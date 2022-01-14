@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <title>Chea Verificación</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/formulariomaster.css"> 
+        <link rel="stylesheet" href="../assets/css/formulariochea.css"> 
+    </head>
+    <body>
+        <div class="mainscreen">    
+            <div class="tarjeta">
+                <div class="LadoIzquierdo">
+                    <img src="../assets/img/LogotipoSinFondo.png" class="logo" alt="Logotipo Lux Hotel"/>
+                </div>
+                <div class="ladoDerecho">
+                    <form action="#">
+                        <h1>Verificación de pago</h1>
+                        <h2>Información del pago</h2>
+                        <p>Nombre del titular de la tarjeta</p>
+                        <input type="text" class="caja" name="nombre" required />
+                        <p>Número de tarjeta</p>
+                        <input type="number" class="caja" name="card_number" id="numero_tarjeta" required />
+
+                        <p>Tipo de tarjeta</p>
+                        <select class="caja" name="card_type" id="tipo_tarjeta" required>
+                            <option value="">--Seleccione un tipo de tarjeta--</option>
+                            <option value="Visa">Visa</option>
+                            <option value="RuPay">RuPay</option>
+                            <option value="MasterCard">MasterCard</option>
+                        </select>
+                        <div class="expcvv">
+
+                            <p class="expcvv_text">Expiración</p>
+                            <input type="date" class="caja" name="exp_fecha" id="exp_fecha" required />
+
+                            <p class="expcvv_text2">Código CVV</p>
+                            <input type="password" class="caja" name="cvv" id="cvv" required />
+                        </div>
+                        <p></p>
+                        <button type="submit" class="botón">Verificar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+.botonesFormularioReservaP{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0.6rem;  
+    padding-bottom: 0%;  
+}
+

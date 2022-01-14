@@ -1,0 +1,159 @@
+
+.contenedorsuper{
+  margin: 0.3%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#contenedor{
+    display: inline-block;
+    background-color: brown;
+    width: 100%;
+}
+
+
+
+.cajatitulo {
+    height: auto;
+    text-align: center;
+    background-color: #ffb6b7;
+}
+
+.carousel{
+    height: 60vh;
+    background-image: url(https://misiondelosangeles.com/wp-content/uploads/2020/03/banner_head_habitaciones-1800x656.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size:cover;
+    padding: 5% 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.carousel >p{
+    font-size: 40px !important;
+    text-align: center;
+    color: white;
+}
+
+.carousel > button{
+    margin-top: 1%;
+    color: #fff;
+    padding: 1%;
+    background-color: #b99937;
+    border-color: #b99937;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cajaemcabezado{
+    padding: 2%;
+    max-height: auto;
+    text-align: center;
+    background-color: palevioletred;
+}
+
+.subtitulo{
+    font-style: italic;
+    font-size: 20px;
+    color: #272727;
+    font-family: Lato;
+}
+
+.titulodorado{
+    padding: 1%;
+    text-align: start;
+    margin-left: 0%;
+    color: #bfae3f;
+}
+
+
+.contenedoritems{
+  background-color: #70addb;
+  text-align: center;
+}
+
+.cajaitem {
+    display: inline-block;
+    width: 49%;
+    background-color: #dcedff;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.informacion{
+  display: inline-block;
+}
+
+.Subtitulo_Gris {
+    color: #696969;
+    font-family: Lato;
+    font: cursive;
+  }
+    
+  .seccionDos {
+    margin-top: 5%;
+  }
+  
+  .grupal {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1%;
+    display: inline-block;
+    font-family: Lato;
+  }
+  .Subtitulo_Negro Cursiva_Italic {
+    color: black;
+  }
+  .Izquierda {
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: justify;
+    font: cursive;
+    font-family: Lato;
+    color: gray;
+  }
+  .grupo1 {
+    margin-top: 2%;
+  }
+  .grupo2 {
+    margin-top: 2%;
+  }
+
+  .contacto{
+    border: #bfae3f solid;
+    background-color: white;
+    padding: 2%;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .Subtitulo_info {
+    font-family: Lato;
+    margin-top: 1%;
+    font-size: 18px;
+    font: cursive;
+    color: black;
+    line-height: 2;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .columna2 {
+    /*margin-left: 10%;*/
+    display: inline-block;
+    text-align: center;
+    margin-top: 3%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+  }
+  
+  .columna3 {
+    text-align: center;
+    margin-top: 3%;
+    display: inline-block;
+    margin-bottom: 3%;
+  }

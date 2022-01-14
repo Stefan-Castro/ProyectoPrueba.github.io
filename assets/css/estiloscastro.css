@@ -1,0 +1,300 @@
+.cabecera{
+    background-color: #282828;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255); /* agregar , 0.5 para transparencia*/
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    
+}
+#NombreHotel {
+    text-decoration: none;
+    color: #cc9900;
+}
+
+.navegacion ul {
+    display: flex;
+}
+  
+/* quitar diseño de la lista y ajustar margenes*/
+.navegacion ul li {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.navegacion ul a {
+    color: #727272;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 12px 15px;
+}
+  
+.navegacion ul a:hover {
+    color: goldenrod;
+    font-size: 16px;
+    border-bottom: 1.5px solid #eebf04;
+}
+
+.contenedort{
+    margin-top: 6%;
+    width: 100%;
+    height: 85vh;
+}
+
+.imagenc{
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    /*height: 100%;*/
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mreserva{
+    margin: 0 auto;
+    background: rgba(45, 44, 44, 0.83);
+    width: 69%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.item {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /*display: inline-block;*/
+    border-right: 2px solid goldenrod;
+}
+
+
+  #boton {
+    padding-top: 1%;
+    border-right: none;
+  }
+
+  .boton {
+    color: #fff;
+    background-color: #b99937;
+    border-color: #b99937;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+ 
+  .boton:hover {
+    color: #fff;
+    background-color: #997300;
+    border-color: #8f6b00;
+  }
+  
+  .item p {
+    text-align: center;
+    color: white;
+  }
+  
+  .item select {
+    background: rgba(45, 44, 44, 0.83);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: goldenrod;
+  }
+  
+  .calendario {
+    background: rgba(45, 44, 44, 0.83);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: goldenrod;
+  }
+
+
+  #informacioninicio {
+    color: #333333;
+  }
+  #informacioninicio h2 {
+    text-align: center;
+    color: #6f5917;
+    font-size: 59px !important;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  #informacioninicio h3 {
+    color: #cc9900;
+    font-size: 24px !important;
+    text-align: center;
+    margin-bottom: 4%;
+  }
+  
+  .piedeimagen{
+    background-color: rgba(45, 44, 44, 0.6); 
+    height: 20%;
+    top: auto;
+    transition: all 0.7s;
+  }
+  .piedeimagen a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .piedeimagen:hover{
+    height: 25%;
+  }
+
+  .titutlosecciones {
+    text-align: center;
+    padding: 2%;
+    font-size: 3em !important;
+  }
+
+  #mapa{
+    background-color: rgba(45, 44, 44, 0.6);
+    border: 2px solid black; 
+    border-radius: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #mapa iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .bordealex{
+    border: 2px solid rgba(0, 0, 0, 0.658);
+     border-radius: 10px;
+  }
+  .bordealex2{
+    border: 2px solid rgba(194, 170, 170, 0.37);
+     border-radius: 10px;
+  }
+  #bannerpiscina {
+    background-image: url(../img/Piscina.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+  }
+
+  #bannerhabitacion{
+    background-image: url(../img/bannerhabitacion.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+  }
+
+  .cuadroalex{
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    padding: 2%;
+    background: rgba(249, 249, 249, 0.85);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #333333;
+  }
+  .cuadroalex p {
+    font-size: 14px;
+    line-height: 1.82857;
+    margin-bottom: 2%;
+  }
+  
+  .cuadroalex h2 {
+    font-size: 30px !important;
+    margin-bottom: 5%;
+  }
+
+  #contacto {
+    color: #c90;
+    font-size: 16px !important;
+    font-family: Lato !important;
+  }
+  
+
+  .piedepagina {
+    /*width: 100%;*/
+    background-color: #11110f;
+    color: #727272;
+  }
+
+  #columnapie > h2 {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #columnapie > p {
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+
+  #columnapie >hr{
+    margin-bottom: 1.5%;
+    margin-top: -1%;
+    height: 3px;
+    background-color:  #e7bd70;
+  }
+
+  .piedepagina .bannpie2 {
+    background: rgba(45, 44, 44, 0.8);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .piedepagina .bannpie2 small {
+    font-size: 15px;
+  }
+  .piedepagina .bannpie2 p {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.7;
+    margin: 0.1%;
+  }
+
+  hr {
+    margin-bottom: 1.5%;
+    margin-top: -1%;
+    border-color: #e7bd70;
+  }
+
+
+  #redessocialmedia {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /*#redessocialmedia .logopie {
+    width: 241px;
+    height: 135px;
+  }*/
+  #redessocialmedia h2 {
+    margin-bottom: 1%;
+  }
+  #redessocialmedia p {
+    text-align: center;
+    color: #e7bd70;
+    font-size: 257%;
+    margin-bottom: 1%;
+    font-style: oblique;
+    font-family: Lato;
+  }
+
+  .red-social a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #eecb89d7;
+    text-align: center;
+    transition: all 0.7s;
+  }
+  .red-social a:hover {
+    background: #49330a;
+  }

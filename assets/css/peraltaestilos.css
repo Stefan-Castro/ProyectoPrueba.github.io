@@ -1,0 +1,192 @@
+/*Selector de pseudoclase que permite modificar los colores del documento html*/
+:root{
+    --gold1:#F4BD76;
+    --gold2:#F6CD8F;
+    --gray:#ffffff80;
+    --gray2:#f7d9d990;
+    --black1: #111113;
+    --white2: #ffffff;
+    --shadow: 0 8px 8px;
+    /*--color_shadow: #00000033;*/
+}
+/*Selector Universal, agrega estilo para todos los elementos del documento/*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Lato;
+
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row: 12;
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin:auto;
+    gap: 10px;
+    overflow:hidden;
+}
+
+.hero__textos{
+    width: 48%;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 300;
+    color: rgb(22, 22, 22);
+
+}
+
+.title--active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 24px;
+    color: var(--black1);
+    text-shadow: var(--shadow)  var(--color_shadow);
+    margin: 15px 0;
+ 
+}
+
+.copy__active{
+    font-weight: 700;
+    font: cursive;
+    font-family: Lato;
+}
+
+.cta{
+    padding: 20px 30px;
+    display:inline-table;
+    background: linear-gradient(180deg, #b1a492 0%, #b8ac9eda 100%);
+    text-decoration: none;
+    color: var(--black1);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 10px;
+}
+.boton_central{
+    text-align: center;
+
+}
+
+.header{
+    height: 500px;
+}
+
+.img_hero{
+    width: 100%;
+    height: auto;
+    grid-column: 2/8;
+}
+.img{
+    width: 95%;
+    max-width: 400px;
+}
+.hero_textos{
+    grid-column: 1/2;
+    padding-right: 20px;
+}
+.hero_textos p{
+    text-align: justify;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    /* grid-template-columns: repeat(4, 1fr) 3%; */
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container>.header, .container>.content, .container>.sidebar, .container>div {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.container>.header {
+    grid-column: 1/-1;
+    background-color: #3a3232d3;
+    color: #ffffff;
+    height: 80px;
+}
+
+.container>.content {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.content>.article {
+    background:  rgba(219, 135, 8, 0.774);
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9
+}
+
+.content .article h1,
+.content .article p {
+    padding: 10px;
+}
+
+.container>.sidebar {
+    grid-column: span 2;
+    grid-row: span 4;
+    background:rgba(209, 144, 45, 0.712);
+    color: #ffffff;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sidebar img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    /*transition: all 0.5s ease;*/
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+    
+}
+
+/*.zoom{
+     Aumentamos la anchura y altura durante 2 segundos 
+    transition: width 2s, height 2s, transform 2s;
+}
+.zoom:hover{
+    /* tranformamos el elemento al pasar el mouse por encima al doble de
+       su tamaño con scale(1). 
+    transform : scale(1.5);
+}*/
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .container .content {
+        grid-column: 1 / -1;
+    }
+    .container .sidebar {
+        grid-column: 1 / 6;
+    }
+
+    .container .related-post {
+        grid-column: 1/-1;
+    }
+}

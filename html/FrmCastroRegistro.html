@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/formulariomaster.css"> 
+    <title>Castro Registro</title>
+</head>
+<body>
+    <div class="mainscreen">    
+        <div class="tarjeta">
+            <div class="LadoIzquierdo">
+                <img src="../assets/img/LogotipoSinFondo.png" class="logo" alt="Logotipo Lux Hotel"/>
+            </div>
+            <div class="ladoDerecho">
+                <form action="#">
+                    <h1>Creación de Cuenta</h1>
+                    <h2>Registrese en Lux Hotel</h2>
+                    <p>E-mail</p>
+                    <input type="text" class="caja" name="e-mail" required />
+                    <p>C.I - Pasaporte</p>
+                    <input type="text" class="caja" name="nombre" required/>
+                    <p>Nombres Completos</p>
+                    <input type="text" class="caja" name="nombre" required/>
+                    <p>Contraseña</p>
+                    <input type="password" class="caja" name="contrase" required/>
+                    <p>Confirmar Contraseña</p>
+                    <input type="password" class="caja" name="contrasecf" required/>
+
+                    <p>Tipo de tarjeta</p>
+                    
+                    <div class="cajaalex">
+
+                        <p>País</p>
+                        <select class="caja" name="paises" id="pais" style="margin-right:5%;">
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="España">España</option>
+                        </select>
+                        <p>Fecha Nac.</p>
+                        <input type="date" class="caja"  required />
+                    </div>
+                    <label><input type="checkbox">Recordar datos</label>
+                    <div class="botonesFormulariocuenta">
+                        <input class="botón" id="botoncrearC" type="button" value="Crear">
+                        <input class="botón" id="botonCancelar" type="button" value="Cancelar" onclick="location.href='../CastroAlexanderIndex.html'">
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

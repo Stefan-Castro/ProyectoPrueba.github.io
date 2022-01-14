@@ -1,0 +1,249 @@
+*{
+margin: 12px;
+padding: 12px;
+box-sizing: border-box;
+}
+
+.padreHotel{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/******************** CABECERA ********************/
+.headerHotel{
+    background: #b99937;
+}
+
+.titulo-pagina{
+    background: white;
+    text-align: center;
+    font-family: Lato;
+    color: goldenrod;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 250%;
+}
+
+/******************** BIENVENIDA ********************/
+
+.sectionBienvenidaHotel{
+    background: #D4AC2B;
+}
+
+.bienvenida{
+    background: #F3ED9E;
+    justify-content: center;
+    text-align: center;
+    border: 6px solid #b99937;
+    font-family: Lato;
+}
+
+.imagenHotel{
+    background: white;
+}
+
+.imagenHotel img{
+    width: 75%;
+    height: 50%;
+}
+
+.titulobienvenida{
+    background: white;
+    color: goldenrod;
+    font-style: italic;
+    font-size: 150%;
+}
+
+.mensajeBienvenida{
+    background: white;
+}
+
+/******************** INSTALACIONES ********************/
+
+.sectionInstalacionesHotel{
+    background: #D4AC2B;
+}
+
+.sectionInstalacionesHotel img{
+    width: 80%;
+    height: 90%;
+}
+
+.tituloinstalaciones{
+    background: white;
+    justify-content: center;
+    text-align: center;
+    font-style:italic;
+    color: goldenrod;
+    font-family: Lato;
+}
+
+.tituloinstalaciones h4{
+    color: black;
+}
+
+.tipo-de-intalaciones{
+    background: #E6DF9A;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.restaurante{
+    background: white;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.restaurante h3{
+    color: goldenrod;
+}
+
+.restaurante-imagen{
+    background: #F3ED9E;
+    border: 6px solid #b99937;
+    margin: 0;
+    padding: 0;
+    height: 227px;
+}
+
+.salon-evento{
+    background: white;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.salon-evento h3{
+    color: goldenrod;
+}
+
+.salon-evento-imagen{
+    background: #F3ED9E;
+    border: 6px solid #b99937;
+    margin: 0;
+    padding: 0;
+    height: 227px;
+}
+
+.piscina{
+    background: white;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.piscina h3{
+    color: goldenrod;
+}
+
+.piscina-imagen{
+    background: #F3ED9E;
+    border: 6px solid #b99937;
+    margin: 0;
+    padding: 0;
+    height: 227px;
+}
+
+/******************** UBICACIÓN - SERVICIOS ********************/
+
+.sectionUbicacionServicios{
+    background: #E6DF9A;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.ubicacion{
+    background: white;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ubicacion h3{
+    color: goldenrod;
+}
+
+.ubicacion-imagen{
+    background: #F3ED9E;
+    border: 6px solid #b99937;
+    margin: 0;
+    padding: 0;
+    height: 227px;
+}
+
+.wi-fi{
+    background: white;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wi-fi h3{
+    color: goldenrod;
+}
+
+.wi-fi-imagen{
+    background: #F3ED9E;
+    border: 6px solid #b99937;
+    margin: 0;
+    padding: 0;
+    height: 227px;
+}
+
+/******************** ATENCIÓN ********************/
+
+.sectionAtencion{
+    background: #E6DF9A;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.atencion-personalizada{
+    background: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.atencion-personalizada h3{
+    color: goldenrod;
+}
+
+.atencion-personalizada-imagen{
+    background: #F3ED9E;
+    border: 6px solid #b99937;
+    margin: 0;
+    padding: 0;
+    height: 227px;
+}
+
+.botonzambrano{
+    margin-top: 1%;
+    color: #fff;
+    padding: 1%;
+    background-color: #b99937;
+    border-color: #b99937;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media all  and (max-width: 910px){
+    .tipo-de-intalaciones{
+        flex-direction: column;
+    }
+    .sectionUbicacionServicios{
+        flex-direction: column;
+    }
+
+}
