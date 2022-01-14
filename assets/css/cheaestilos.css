@@ -1,159 +1,180 @@
 
-.contenedorsuper{
-  margin: 0.3%;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-#contenedor{
-    display: inline-block;
-    background-color: brown;
-    width: 100%;
-}
-
-
-
-.cajatitulo {
-    height: auto;
-    text-align: center;
-    background-color: #ffb6b7;
-}
-
-.carousel{
-    height: 60vh;
-    background-image: url(https://misiondelosangeles.com/wp-content/uploads/2020/03/banner_head_habitaciones-1800x656.jpg);
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-size:cover;
-    padding: 5% 0;
-    text-align: center;
-    justify-content: center;
-}
-
-.carousel >p{
-    font-size: 40px !important;
-    text-align: center;
-    color: white;
-}
-
-.carousel > button{
-    margin-top: 1%;
-    color: #fff;
-    padding: 1%;
-    background-color: #b99937;
-    border-color: #b99937;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.cajaemcabezado{
-    padding: 2%;
-    max-height: auto;
-    text-align: center;
-    background-color: palevioletred;
-}
-
-.subtitulo{
+.Subtitulo{
+    margin-bottom:3%;
     font-style: italic;
-    font-size: 20px;
     color: #272727;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
     font-family: Lato;
+    margin-top: 2%;
 }
-
-.titulodorado{
-    padding: 1%;
-    text-align: start;
-    margin-left: 0%;
-    color: #bfae3f;
+.TituloDorado {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 3%;
+  color: #bfae3f;
 }
-
-
-.contenedoritems{
-  background-color: #70addb;
-  text-align: center;
-}
-
-.cajaitem {
-    display: inline-block;
-    width: 49%;
-    background-color: #dcedff;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.informacion{
+.imguno {
+  width: 40%;
+  height: 30%;
+  margin-top: 2%;
+  margin-left: 3%;
   display: inline-block;
 }
 
 .Subtitulo_Gris {
-    color: #696969;
-    font-family: Lato;
-    font: cursive;
-  }
-    
-  .seccionDos {
-    margin-top: 5%;
-  }
-  
-  .grupal {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 1%;
-    display: inline-block;
-    font-family: Lato;
-  }
-  .Subtitulo_Negro Cursiva_Italic {
-    color: black;
-  }
-  .Izquierda {
-    padding: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    text-align: justify;
-    font: cursive;
-    font-family: Lato;
-    color: gray;
-  }
-  .grupo1 {
-    margin-top: 2%;
-  }
-  .grupo2 {
-    margin-top: 2%;
-  }
+  color: #696969;
+  font-family: Lato;
+  font: cursive;
+}
 
-  .contacto{
-    border: #bfae3f solid;
-    background-color: white;
-    padding: 2%;
+.Subtitulo_info {
+  font-family: Lato;
+  margin-top: 1%;
+  font-size: 18px;
+  font: cursive;
+  color: black;
+  line-height: 2;
+  box-sizing: border-box;
+  text-align: center;
+}
+.columna2 {
+  margin-left: 10%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.columna3 {
+  text-align: center;
+  margin-top: 3%;
+  display: inline-block;
+  margin-left: 15%;
+  margin-bottom: 3%;
+}
+
+.seccionDos {
+  margin-top: 5%;
+}
+
+.cuadro {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: #bfae3f solid;
+  margin-left: 3%;
+  width: 40%;
+  padding-top: 1%;
+}
+
+.grupal {
+  text-align: center;
+  margin-top: 1%;
+  margin-left: 14%;
+  display: inline-block;
+  font: cursive;
+  font-family: Lato;
+}
+.Subtitulo_Negro Cursiva_Italic {
+  color: black;
+}
+.Izquierda {
+  text-align: justify;
+  font: cursive;
+  font-family: Lato;
+  color: gray;
+}
+.grupo1 {
+  margin-top: 2%;
+}
+.grupo2 {
+  margin-top: 2%;
+}
+
+
+
+/* slider */
+.slider {
+    border-radius: 5px;
+    box-shadow: 5px 5px hsl(47, 51%, 59%);
+    position: relative;
+}
+
+.slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+.slider ul li  {
+    position: relative;
+    display: none;
+    height:350px;
+}
+
+.slider ul li img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+.slider ul li span {
+    position: absolute;
+    bottom: 0;
+    background: #272727;
+    left: 0;
+    width: 100%;
+    padding: 5px;
     text-align: center;
-    display: inline-block;
-  }
+    color: #fff;
+    
+}
+/* buttons */
+.slider .buttons  {
+    position: absolute;
+    top: 40%;
+    width:  100%;
+    
+    background-color: #efefef
+}
+.slider .buttons .next {
+    font-size: 2rem;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+   
+    text-align: center;
+     background-color: #efefef
+}    
+.slider .buttons .prev {
+    font-size: 2rem;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+     background-color: #efefef
+}   
+.slider .buttons .next:hover {
+    background: hsl(0, 0%, 25%);
+    color: hsl(0, 0%, 93%);
+}
+.slider .buttons .prev:hover {
+    background: hsl(0, 0%, 25%);
+    color: hsl(0, 0%, 93%);
+}
+
+/* slider animation */
+.slider ul li {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
   
-  .Subtitulo_info {
-    font-family: Lato;
-    margin-top: 1%;
-    font-size: 18px;
-    font: cursive;
-    color: black;
-    line-height: 2;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  .columna2 {
-    /*margin-left: 10%;*/
-    display: inline-block;
-    text-align: center;
-    margin-top: 3%;
-    margin-right: 15%;
-    margin-bottom: 3%;
-  }
-  
-  .columna3 {
-    text-align: center;
-    margin-top: 3%;
-    display: inline-block;
-    margin-bottom: 3%;
-  }
+@keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+}
