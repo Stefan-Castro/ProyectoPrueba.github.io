@@ -4,7 +4,6 @@
     height: 15vh;
     float:left;
     background-color: #282828;
-    border: 1px solid #000000;
     box-sizing: border-box;
     text-align: center;
     color: goldenrod;
@@ -16,21 +15,19 @@
     float:left;
     background-color: #fefeff;
     padding: 1em;
-    border: 1px solid #000000;
     box-sizing: border-box;
     
 }
 .ContenedorSuperiorP img{
-    max-width: 100%;
-    
+    width: 100%;
+    height: 100%;
    
 }
 .TextoIzquierda{
     width: 100%;
     height: 15vh;
     float:left;
-    background-color:#282828;
-    border: 1px solid #000000;
+    background-color: #fefeff;
     font-style: italic;
     color: goldenrod;
     text-align: justify;
@@ -39,14 +36,13 @@
       
 }
 .TextoIzquierda h2{
-    color: white;
+    color: black;
 }
 .TextoCentral{
     width: 100%;
     height: 15vh;
     float:left;
     background-color:white;
-    border: 1px solid #000000;
     font-style: italic;
     color: #000000;
     text-align: center;
@@ -58,7 +54,6 @@
     width: 100%;
     height: 10vh;
     background-color:#FFF6DD;
-    border: 1px solid #000000;
     float: right;
     text-align: center;
     font-style: italic;
@@ -70,9 +65,11 @@
 
 img{
     max-width: 100%;
+    opacity: 0.5;
+    transition: all 0.5s;
 }
 .CajasPromociones{
-    border: 1px solid #000000;
+    
     box-sizing: border-box;
     float: left;
     padding: 1em;
@@ -144,4 +141,83 @@ img{
     color: #082032;
     background-color: #eaeaea;
     
+}
+/* efecto al pasar por las opciones del menu*/
+.navegacion ul a:hover {
+    color: goldenrod;
+    font-size: 16px;
+    border-bottom: 1.5px solid #EEBF04;
+  }
+  
+  /* dar estilo al boton*/
+  .boton{
+      color: #FFF;
+      background-color: #d4a141;
+      border-color: #d4a141;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      padding: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+  }
+  
+  /*------------------------------------------------------------------------------*/
+  /* efecto al pasar el mouse al boton*/
+  .boton:hover{
+      color: #FFF;
+      background-color: #d4a141;
+      border-color: #d4a141;
+  }
+  /* DOM efecto hacia arriba-abajo-izquierda-derecha*/
+  .transform_up {transform: translateY(20%);}
+  .transform_dow {transform: translateY(-20%);}
+  .transform_let {transform: translateX(20%);}
+  .transform_right {transform: translateX(-20%);}
+
+  .show_img{opacity:1;
+   transform:none ;
+}
+/*DOM Scroll TopButton*/
+.to-top{
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+    
+
+/*.scroll-top-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: calc(4.25rem+1vw);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: all .4s ease-out;
+}*/
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
