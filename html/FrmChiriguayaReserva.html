@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Chiriguaya Reserva</title>
     <link rel="stylesheet" href="../assets/css/formulariomaster.css">
     <style>
-        .botonesFormularioReservaP {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 0.6rem;
-            padding-bottom: 0%;
+        .botonesFormularioReservaP{
+        display:flex;
+        justify-content: space-between;
+        padding-top: 0.6rem;  
+        padding-bottom: 0%;  
         }
-
         #términos {
             text-align: center;
         }
@@ -22,10 +20,10 @@
 <body>
 
 
-    <div class="mainscreen">
+    <div class="mainscreen">    
         <div class="tarjeta">
             <div class="LadoIzquierdo">
-                <img src="../assets/img/LogotipoSinFondo.png" class="logo" alt="Logotipo Lux Hotel" />
+                <img src="../assets/img/LogotipoSinFondo.png" class="logo" alt="Logotipo Lux Hotel"/>
             </div>
             <div class="ladoDerecho">
                 <form id="formReserva" onsubmit="return validarReserva()">
@@ -48,15 +46,13 @@
                     <p id="términos">Estoy de acuerdo con <a href="#">Términos y condiciones</a></p>
                     <div class="botonesFormularioReservaP">
                         <input class="botón" id="botonReservaP" type="submit" value="Reservar">
-                        <input class="botón" id="botonCancelarRservaP" type="button" value="Cancelar"
-                            onclick="location.href='ChiriguayaAlvaroMP.html'">
+                        <input class="botón" id="botonCancelarRservaP" type="button" value="Cancelar" onclick="location.href='ChiriguayaAlvaroMP.html'">
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <script src="../assets/js/JavaScriptA.js"></script>
-
+    
 </body>
-
 </html>
