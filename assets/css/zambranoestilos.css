@@ -9,54 +9,64 @@
     box-sizing: border-box;
 }
 
-/******************** CABECERA ********************/
-.headerHotel{
-    background: #b99937;
-}
-
-.titulo-pagina{
-    background: white;
-    text-align: center;
-    font-family: Lato;
-    color: goldenrod;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 250%;
-}
-
 /******************** BIENVENIDA ********************/
-
-.sectionBienvenidaHotel{
-    background: #D4AC2B;
-}
-
 .bienvenida{
-    background: #F3ED9E;
     justify-content: center;
     text-align: center;
     border: 6px solid #b99937;
     font-family: Lato;
 }
 
-.imagenHotel{
-    background: white;
-}
-
-.imagenHotel img{
+.carousel-imagenHotel img{
     width: 75%;
-    height: 50%;
+    height: 95%;
 }
 
 .titulobienvenida{
-    background: white;
+    background: #F3ED9E;
+    border: 3px solid #b99937;
     color: goldenrod;
     font-style: italic;
     font-size: 150%;
 }
 
 .mensajeBienvenida{
-    background: white;
+    border: 3px solid #b99937;
 }
+
+/******************* CAROUSEL DE IMÁGENES **************/
+.carousel-imagenHotel{
+	position: relative;
+}
+
+.carousel-anterior,
+.carousel-siguiente{
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: none;
+	top: calc(45% - 35px);
+	cursor: pointer;
+	text-align: center;
+	background: none;
+	color: goldenrod;
+	opacity: 70%;
+}
+
+.carousel-anterior:hover,
+.carousel-siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel-anterior {
+	left: -30px;
+}
+
+.carousel-siguiente {
+	right: -30px;
+}
+
 
 /******************** INSTALACIONES ********************/
 
