@@ -13,18 +13,18 @@
 .bienvenida{
     justify-content: center;
     text-align: center;
-    border: 6px solid #b99937;
     font-family: Lato;
 }
 
 .carousel-imagenHotel img{
-    width: 75%;
+    width: 95%;
     height: 95%;
+    margin: 0;
+    padding: 0;
 }
 
 .titulobienvenida{
     background: #F3ED9E;
-    border: 3px solid #b99937;
     color: goldenrod;
     font-style: italic;
     font-size: 150%;
@@ -36,40 +36,43 @@
 
 /******************* CAROUSEL DE IMÁGENES **************/
 .carousel-imagenHotel{
-	position: relative;
+	position:relative;
+    margin: 0px;
+    padding: 0px;
 }
 
 .carousel-anterior,
 .carousel-siguiente{
-	position: absolute;
-	display: block;
-	width: 100px;
-	height: 100px;
+	position:absolute;
+	width:20px;
+	height:20px;
 	border: none;
-	top: calc(45% - 35px);
-	cursor: pointer;
-	text-align: center;
-	background: none;
+	top: calc(50% - 50px);
+	cursor:pointer;
+    background: none;
 	color: goldenrod;
-	opacity: 70%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .carousel-anterior:hover,
 .carousel-siguiente:hover {
-	opacity: 100%;
+	color: black;
 }
 
 .carousel-anterior {
-	left: -30px;
+	left: -15px;
 }
 
 .carousel-siguiente {
-	right: -30px;
+	right: -15px;
 }
 
+.carousel-lista{
+    overflow: hidden;
+}
 
 /******************** INSTALACIONES ********************/
-
 .sectionInstalacionesHotel{
     background: #D4AC2B;
 }
