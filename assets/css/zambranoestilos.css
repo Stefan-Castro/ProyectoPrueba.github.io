@@ -1,12 +1,12 @@
-*{
-margin: 12px;
-padding: 12px;
-box-sizing: border-box;
-}
-
 .padreHotel{
     display: flex;
     flex-flow: column nowrap;
+}
+
+.formatoaliss{
+    margin: 12px;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 /******************** CABECERA ********************/
