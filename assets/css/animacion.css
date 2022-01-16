@@ -1,0 +1,24 @@
+.reveal{
+    position: relative;
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .revealarriba{
+    transform: translateY(150px);
+  }
+
+  
+  .revealizquierda{
+    transform: translateX(150px);
+  }
+
+  .revealderecha{
+    transform: translateX(-150px);
+  }
+
+  .reveal.active{
+    transform: translateY(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }

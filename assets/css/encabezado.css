@@ -1,0 +1,164 @@
+.cabecera{
+    background-color: #282828;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255); /* agregar , 0.5 para transparencia*/
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    
+}
+.espacio{
+    margin-top: 6%;
+  }
+  
+#NombreHotel {
+    text-decoration: none;
+    color: #cc9900;
+    padding-left: 10%;
+}
+
+.navegacion ul {
+    display: flex;
+}
+  
+/* quitar diseño de la lista y ajustar margenes*/
+.navegacion ul li {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.navegacion ul a {
+    color: #727272;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 12px 15px;
+    transition: all 0.3s;
+}
+  
+.navegacion ul a:hover {
+    color: goldenrod;
+    font-size: 15.3px;
+    border-bottom: 1.5px solid #eebf04;
+}
+
+
+#boton {
+    padding-top: 1%;
+    border-right: none;
+  }
+
+  .boton {
+    color: #fff;
+    background-color: #b99937;
+    padding: 2%;
+    border-color: #b99937;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+ 
+  .boton:hover {
+    color: #fff;
+    background-color: #997300;
+    border-color: #8f6b00;
+  }
+
+
+  /*** PIE DE PAGINA***/
+  .piedeimagen{
+    background-color: rgba(45, 44, 44, 0.6); 
+    height: 20%;
+    top: auto;
+    transition: all 0.7s;
+  }
+  .piedeimagen a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .piedeimagen:hover{
+    height: 25%;
+  }
+
+  .piedepagina {
+    /*width: 100%;*/
+    background-color: #11110f;
+    color: #727272;
+  }
+
+  #columnapie > h2 {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #columnapie > p {
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+
+  #columnapie >hr{
+    margin-bottom: 1.5%;
+    margin-top: -1%;
+    height: 3px;
+    background-color:  #e7bd70;
+  }
+
+  .piedepagina .bannpie2 {
+    background: rgba(45, 44, 44, 0.8);
+    padding: 3px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .piedepagina .bannpie2 small {
+    font-size: 15px;
+  }
+  .piedepagina .bannpie2 p {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.7;
+    margin: 0.1%;
+  }
+
+  hr {
+    margin-bottom: 1.5%;
+    margin-top: -1%;
+    border-color: #e7bd70;
+  }
+
+
+  #redessocialmedia {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #redessocialmedia h2 {
+    margin-bottom: 1%;
+  }
+  #redessocialmedia p {
+    text-align: center;
+    color: #e7bd70;
+    font-size: 257%;
+    margin-bottom: 1%;
+    font-style: oblique;
+    font-family: Lato;
+  }
+
+  .red-social a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #eecb89d7;
+    text-align: center;
+    transition: all 0.7s;
+  }
+  .red-social a:hover {
+    background: #49330a;
+  }
+
