@@ -3,85 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HABITACIONES</title>
-    <link rel="stylesheet" href="../assets/css/peraltaestilos.css">
+    <meta name="author" content="Arlette Peralta">
+    <meta name="keywords" content="Html5, hoteles, habitaciones, JavaScript">
+    <title>HABITACION</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-    <header class="header">
-        <h1 style="text-align: center; background: rgba(219, 135, 8, 0.774); padding: 1%;">HABITACIONES</h1>
-        <div class="grid">
-            <div class="hero_textos">
-                <h1 class="title">Lo mejor <span class="title--active">En habitaciones.</span></h1>
-                <p class="copy">Nos encargamos de llevar tu estadía al <span class="copy__active">siguiente nivel.</span></p>
-                <a href="FrmPeraltaCotizacion.html" class="cta">Reserva en linea</a>
-            </div>
-            <div class="img_hero">
-                <img src="https://www.unicohotelrivieramaya.com/globalassets/media-unico/campaigns-2020/stay/estancia-1-br--2-br/estancia-suite-two-bedroom.jpg"
-                    alt="img_hero" style="height: 90%;" />
-            </div>
+    
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicio">Servicio de habitación</a>
+                <a href="#galeria">Habitaciones</a>
+                <a href="#expertos">Nuestras recomendaciones...</a>
+                <a href="#footer">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Lo mejor en habitaciones.</h1>
+            <p class="copy">Nos encargamos de llevar tu estadia al siguiente nivel.</p>
         </div>
+        
     </header>
     <main>
-        <div class="container">
-            <header class="header">
-                <h1>Habitaciones</h1>
-            </header>
-            <div class="content">
-                <article class="article">
-                    <h2>Plus King</h2>
-                    <ul>
-                        <li>Una Cama King Size.</li>
-                        <li>Mini bar.</li>
-                        <li>Sistema de aire acondicionado central.</li>
-                    </ul>
-                    <p>Para nuestros huéspedes más selectos ofrecemos estas cómodas y confortables habitaciones.</p>
-                    <p>Donde podrá disfrutar de nuestras exclusivas camas, que le brindarán el confort y la calidad que usted merece, 
-                        con la mejor atención personalizada.</p>
-                    <div class="boton_central">
-                        <a href="FrmPeraltaCotizacion.html" class="cta">Reserva en linea</a>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Servicio de habitaciones</h2>
+            <div class="contenedor-servicio">
+                <img src="img/SERVICIO.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Kit de habitación.</h3>
+                        <p>Ofrecemos un servicio de limpieza, planchado y vaporización de calzado.
+                            Contamos con servicio de lavandería, pudiendo hacer uso de Bata y pantuflas.</p>
                     </div>
-                </article>
-    
-                <article class="article">
-                    <h2>PURE Wellness® Alcoba</h2>
-                    <ul>
-                        <li>Una Cama King Size.</li>
-                        <li>Nevera ejecutiva..</li>
-                        <li>Balcón con una inmejorable vista.</li>
-                    </ul>
-                    <p>Como parte de la gama de habitaciones PURE Wellness®, 
-                        estas instalaciones están especialmente diseñadas para brindar una noche de descanso total.</p>
-                    <div class="boton_central">
-                        <a href="FrmPeraltaCotizacion.html" class="cta">Reserva en linea</a>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Confort</h3>
+                        <p> En nuestras habitaciones contamos con una comodidad de priemra.
+                            Diseño único y personalizado, así como muebles y piezas de arte locales.</p>
                     </div>
-                </article>
-                <article class="article">
-                    <h2>Plus Queen</h2>
-                    <ul>
-                        <li>Una Cama Queen Size.</li>
-                        <li>TV de 48" en la habitación.</li>
-                        <li>Conexión a internet WiFi.</li>
-                    </ul>
-                    <p>Excelentes habitaciones dobles, la cual dispone de dos cómodas 
-                        y confortables camas Queen,con vista frente al mar.</p>
-                    <div class="boton_central">
-                        <a href="FrmPeraltaCotizacion.html" class="cta">Reserva en linea</a>
+                    <div class="service">
+                        <a href="#" class="cta">Reserva en linea</a>
                     </div>
-                </article>
+                </div>
             </div>
-    
-            <aside class="sidebar">
-                    <img src="https://www.unicohotelrivieramaya.com/globalassets/media-unico/campaigns-2020/stay/estancia-tropical/estancia--tropical-room-king-bed.jpg"
-                        alt="">
-                    <p> Habitación para una familia, Plus King. A <span>$99.00 /</span> Por noche.</p>
-                    <img src="https://www.unicohotelrivieramaya.com/globalassets/media-unico/campaigns-2020/stay/estancia-1-br--2-br/estancia-room-king-bed.jpg"
-                        alt="">
-                    <p>Nueva PURE Wellness® Alcoba. A <span>$120.00 /</span> Por noche.</p>
-                    <img src="https://www.unicohotelrivieramaya.com/globalassets/media-unico/campaigns-2020/stay/alcoba-swim-up/alcoba-suite-king-bed.jpg"
-                        alt="">
-                    <p>Habitación exclusiva para parejas. A <span>$120.00 /</span> Por noche.</p>
-            </aside>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Habitaciones</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/PLUSKING.jpg" class="img-galeria" alt="Hola">
+                    <img src="img/PLUSQUEEN.jpg" class="img-galeria" alt="">
+                    <img src="img/ALCOBA.jpg" class="img-galeria" alt="">
+                    <img src="img/ALCOBAMAR.jpg" class="img-galeria" alt="">
+                    <img src="img/ALCOBAPISCINA.jpg" class="img-galeria" alt="">
+                    <img src="img/SUIT.jpg" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
         </div>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Nuestras recomendaciones...</h2>
+            <section class="rooms">
+                <div class="cont-room">
+                    <img src="img/GRATIS.jpg" alt="">
+                    <h3 class="n-room">Desayunos gratis</h3>
+                </div>
+                <div class="cont-room">
+                    <img src="img/MASRESERVADAS.jpg" alt="">
+                    <h3 class="n-room">Más reservadas</h3>
+                </div>
+                <div class="cont-room">
+                    <img src="img/OFERTAS.jpg" alt="">
+                    <h3 class="n-room">Ofertas</h3>
+                </div>
+            </section>
+        </section>
     </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">LUX HOTEL</h2>
+                    <p>Con estilo, espacio y sencaión de lujo.</p>
+                </div>
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
+</html>
