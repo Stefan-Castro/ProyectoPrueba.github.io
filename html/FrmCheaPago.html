@@ -30,15 +30,16 @@
                 </div>
                 <div class="ladoDerecho">
                     <form action="#" onsubmit="return validar()">
+                        
                         <h1>Verificación de pago</h1>
                         <h2>Información del pago</h2>
                         <p>Nombre del titular de la tarjeta</p>
-                        <input type="text" class="caja" name="nombre" />
+                        <input type="text" class="caja" name="nombre"  id="nombre"/>
                         <p>Número de tarjeta</p>
                         <input type="number" class="caja" name="card_number" id="numero_tarjeta"/>
 
                         <p>Tipo de tarjeta</p>
-                        <select class="caja" name="card_type" id="tipo_tarjeta">
+                        <select class="caja" name="card_type" id="tipo_tarjeta" >
                             <option value="">--Seleccione un tipo de tarjeta--</option>
                             <option value="Visa">Visa</option>
                             <option value="RuPay">RuPay</option>
@@ -47,10 +48,10 @@
                         <div class="expcvv">
 
                             <p class="expcvv_text">Expiración</p>
-                            <input type="date" class="caja" name="exp_fecha" id="exp_fecha"/>
+                            <input type="date" class="caja" name="exp_fecha" id="exp_fecha" />
 
                             <p class="expcvv_text2">Código CVV</p>
-                            <input type="password" class="caja" name="cvv" id="cvv" />
+                            <input type="password" class="caja" name="cvv" id="cvv"  />
                         </div>
                         <p></p>
                         <button type="submit" class="botón">Verificar</button>
