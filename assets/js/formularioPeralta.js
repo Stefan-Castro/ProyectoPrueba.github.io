@@ -59,7 +59,7 @@ function validar() {
         mensaje("Por favor, escoja la cantidad de niños", cant_niños);
     }
     
-    if (Otros.value === "") {
+    if (Otros.value.length === 0) {
         resultado = false;
         mensaje("Este campo es requerido", Otros);
     }    
