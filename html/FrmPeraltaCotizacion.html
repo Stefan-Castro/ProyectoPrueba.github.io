@@ -20,7 +20,7 @@
         <div class="contact-wrapper">
             <div class="contact-form">
                 <h3>LLene el formulario.</h3>
-                <form action="#">
+                <form action="#" onsubmit="return validar()">
                     <p>
                         <label>Nombre y Apellido:</label>
                         <input class="caja" type="text" name="fullname" id="nombreCompleto">
@@ -73,7 +73,7 @@
                         <textarea class="caja" name="message" id="otro" rows="3"></textarea>
                     </p>
                     <p class="block">
-                        <button style="background: #b99937;">
+                        <button type="submit" class="botón" style="background: #b99937;">
                             Enviar
                         </button>
                     </p>
