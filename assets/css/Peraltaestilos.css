@@ -25,7 +25,7 @@ body{
     height: 100vh;
     /* 02 */
     /*background-image: linear-gradient(to top, rgba(187, 191, 194, 0.521) 0%, rgba(120, 124, 126, 0.555) 100%), url(../img/ENCABEZADO1.jpg)*/
-    background-image: linear-gradient(to top, rgba(37, 36, 37, 0.486) 0%, rgba(252, 161, 77, 0.514) 100%), url(img/ENCABEZADO1.jpg);
+    background-image: linear-gradient(to top, rgba(37, 36, 37, 0.486) 0%, rgba(252, 161, 77, 0.514) 100%), url(../img/ENCABEZADO1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
