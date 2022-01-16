@@ -19,7 +19,7 @@
                 <img src="../assets/img/LogotipoSinFondo.png" class="logo" alt="Logotipo Lux Hotel" />
             </div>
             <div class="ladoDerecho">
-                <form action="#">
+                <form action="#" onsubmit="return validar()">
                     <h1>Reclamo de Atención al Cliente</h1>
                     <input class="caja" id="numreservacion" type="text" name="N° de reservación" placeholder="Ingrese su número de reservación"/>
                     <p></p>
@@ -34,6 +34,7 @@
                     
                     <p>Seleccione la instalación que utilizó:</p>
                     <select class="caja" id="instalacion" name="instalaciones">
+                        <option value="">--Seleccione un tipo de tarjeta--</option>
                         <option>Habitación</option>
                         <option>Restaurante</option>
                         <option>Piscina</option>
@@ -53,7 +54,7 @@
             </div>
         </div>
     </div>
-    
+    <script src="../assets/js/formularioZambrano.js"></script>
 </body>
 
 </html>
