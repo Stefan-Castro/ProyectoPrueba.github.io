@@ -7,6 +7,8 @@
     <meta name="author" content="Alisson Zambrano" />
     <meta name="keywords" content="hoteles, reservaciones" />
     <title> HOTEL </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="assets/css/estiloscastro.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/zambranoestilos.css" />
     <style>
         hr {
@@ -18,6 +20,36 @@
 </head>
 
 <body>
+    <header class="cabecera">
+            <div class="container-fluid bg-dark">
+                <div class="row"> 
+                    <div class="col-md-12 col-xl-10 my-auto">
+                        <nav class="navegacion navbar navbar-dark bg-dark navbar-expand-md"> 
+                            <a class="navbar-brand d-flex align-items-center" href="#">
+                                <img class="d-inline-block align-top" width="103" height="61" src="assets/img/logo.png"
+                                    alt="Logo del HOTEL" />
+                                <h1 class="d-inline-block align-center" id="NombreHotel" style="font-size: 35px;">LUX HOTEL</h1>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+                                <ul class="navbar-nav text-center">
+                                    <li class="nav-item"><a class="nav-link" href="html/AlissonZambranoHotelFlex.html">EL HOTEL</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="html/CheaBethServicios.html">SERVICIOS</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="html/Peralta_habitacion.html">HABITACIONES</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="html/ChiriguayaAlvaroMP.html">PROMOCIONES</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-2 d-none d-xl-block my-auto text-center">
+                        <button type="button" class="boton justify-content-center align-items-center" style="padding: 4%;"
+                        onclick="location.href='html/FrmCastroRegistro.html'" >Registrarse/Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </header>
     <div class="padreHotel">
         <header class="headerHotel">
             <div class="titulo-pagina">
