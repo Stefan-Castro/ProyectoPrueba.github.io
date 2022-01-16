@@ -3,58 +3,190 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Formulario Atención al Cliente" />
+    <meta name="description" content="HOTEL" />
     <meta name="author" content="Alisson Zambrano" />
-    <meta name="keywords" content="atención, cliente, quejas" />
-    <title>Zambrano Atención al Cliente </title>
-    <link rel="stylesheet" href="../assets/css/formulariomaster.css" />
-    <link rel="stylesheet" href="../assets/css/formulariozambrano.css" />
+    <meta name="keywords" content="hoteles, reservaciones" />
+    <title> HOTEL </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../assets/css/estiloscastro.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/zambranoestilos.css" />
+    <style>
+        hr {
+            margin-left: 5%;
+            margin-right: 5%;
+            border: 1px solid #b99937;
+        }
+    </style>
 </head>
 
 <body>
-
-    <div class="mainscreen">
-        <div class="tarjeta">
-            <div class="LadoIzquierdo">
-                <img src="../assets/img/LogotipoSinFondo.png" class="logo" alt="Logotipo Lux Hotel" />
-            </div>
-            <div class="ladoDerecho">
-                <form action="#" onsubmit="return validar()">
-                    <h1>Reclamo de Atención al Cliente</h1>
-                    <input class="caja" id="numreservacion" type="text" name="N° de reservación" placeholder="Ingrese su número de reservación"/>
-                    <p></p>
-                    <input class="caja" id="cedula" type="text" name="C.I." placeholder="Ingrese su número de cédula"/>
-                    <input class="caja" id="nombre" type="text" name="Nombre" placeholder="Ingrese su nombre"/>
-                    <input type="text" class="caja" name="apellido" placeholder="Ingrese su apellido"/>
-                    <p>Seleccione su sexo:</p>
-                    <input id="femenino" type="radio" name="sexo">
-                    <label id="labelSexoFemenino" for="femenino">Femenino</label>
-                    <input id="masculino" type="radio" name="sexo">
-                    <label id="labelSexoMasculino" for="masculino">Masculino</label>
-                    
-                    <p>Seleccione la instalación que utilizó:</p>
-                    <select class="caja" id="instalacion" name="instalaciones">
-                        <option value="">--Seleccione un tipo de tarjeta--</option>
-                        <option>Habitación</option>
-                        <option>Restaurante</option>
-                        <option>Piscina</option>
-                        <option>Salón de eventos</option>
-                    </select>
-
-                    <p>Fecha y hora en la que usó la intalación:</p>
-                    <input type="datetime-local" class="caja" name="exp_fecha" id="exp_fecha" required />
-
-                    <p>Descripcion del Problema:</p>
-                    <textarea class="caja" id="DescripcionReclamo" name="reclamo" placeholder="Escriba aquí su reclamo"></textarea>
-                    <div class="botonesFormularioAtencion">
-                        <input class="botón" id="botonReclamo" type="button" value="Enviar reclamo">
-                        <input class="botón" id="botonCancelarReclamo" type="button" value="Cancelar reclamo" onclick="location.href='AlissonZambranoHotelFlex.html'">
-                    </div>
-                </form>
+    <header class="cabecera">
+        <div class="container-fluid bg-dark">
+            <div class="row"> 
+                <div class="col-md-12 col-xl-10 my-auto">
+                    <nav class="navegacion navbar navbar-dark bg-dark navbar-expand-md"> 
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img class="d-inline-block align-top" width="103" height="61" src="../assets/img/logo.png"
+                                alt="Logo del HOTEL" />
+                            <h1 class="d-inline-block align-center" id="NombreHotel" style="font-size: 35px;">LUX HOTEL</h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+                            <ul class="navbar-nav text-center">
+                                <li class="nav-item"><a class="nav-link" href="html/AlissonZambranoHotelFlex.html">EL HOTEL</a></li>
+                                <li class="nav-item"><a class="nav-link" href="html/CheaBethServicios.html">SERVICIOS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="html/Peralta_habitacion.html">HABITACIONES</a></li>
+                                <li class="nav-item"><a class="nav-link" href="html/ChiriguayaAlvaroMP.html">PROMOCIONES</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-2 d-none d-xl-block my-auto text-center">
+                    <button type="button" class="boton justify-content-center align-items-center" style="padding: 4%;"
+                    onclick="location.href='html/FrmCastroRegistro.html'" >Registrarse/Ingresar</button>
+                </div>
             </div>
         </div>
+    </header>
+    <div class="espacio"></div>
+    <div class="padreHotel formatoaliss">
+        <!--<header class="headerHotel">
+            <div class="titulo-pagina">
+                <p>HOTEL</p>
+            </div>
+        </header>-->
+        <section class="formatoaliss sectionBienvenidaHotel">
+            <div class="formatoaliss bienvenida">
+                <div class="formatoaliss imagenHotel">
+                    <img class="formatoaliss" src="../assets/img/hotelimagen.jpg" alt="Hotel">
+                </div>
+                <div class="formatoaliss titulobienvenida">
+                    <h1 class="formatoaliss">Bienvenido a Lux Hotel</h1>
+                </div>
+                <div class="formatoaliss mensajeBienvenida">
+                    <p class="formatoaliss" style="color: black;">Lux Hotel fue inaugurado en Septiembre de 2005, convirtiéndose desde ese
+                        momento en el preferido de los
+                        turistas nacionales y extranjeros,no solo por su excelente ubicación sino también por la calidad
+                        en el
+                        servicio.</p>
+                </div>
+            </div>
+        </section>
+        <section class="formatoaliss sectionInstalacionesHotel">
+            <div class="formatoaliss tituloinstalaciones">
+                <h4 class="formatoaliss">Para su distracción</h4>
+                <h2 class="formatoaliss">Nuestras Instalaciones</h2>
+            </div>
+            <div class="formatoaliss tipo-de-intalaciones">
+                <div class="formatoaliss restaurante">
+                    <div class="formatoaliss restaurante-imagen">
+                        <img class="formatoaliss" src="../assets/img/hotelrestaurante.jpg" alt="Restaurante" />
+                    </div>
+                    <h5 class="formatoaliss">RESTAURANTE</h5>
+                    <h3 class="formatoaliss">Mi Tierra</h3>
+                    <p class="formatoaliss">Rodeado de elegancia y un impecable servicio donde podrás disfrutar de una amplia gastronomía
+                        nacional e internacional. </p>
+                </div>
+                <div class="formatoaliss salon-evento">
+                    <div class="formatoaliss salon-evento-imagen">
+                        <img class="formatoaliss" src="../assets/img/hotelsalondeevento.jpg" alt="Salón de Eventos" />
+                    </div>
+                    <h5 class="formatoaliss">SALÓN DE EVENTO</h5>
+                    <h3 class="formatoaliss">Salón Diamante</h3>
+                    <p class="formatoaliss">Nuestros servicios para eventos incluyen servicios audiovisuales, instalaciones de comidas de
+                        primera clase y personal experimentado.</p>
+                </div>
+                <div class="formatoaliss piscina">
+                    <div class="formatoaliss piscina-imagen">
+                        <img class="formatoaliss" src="../assets/img/hotelpiscina.jpg" alt="Piscina" />
+                    </div>
+                    <h5 class="formatoaliss">PISCINA</h5>
+                    <h3 class="formatoaliss">Piscina Moderna</h3>
+                    <p class="formatoaliss">Ubicada en la planta baja del Hotel. Usted podrá disfrutar de un día de sol, relajación y
+                        comodidad en la piscina de nuestro hotel.</p>
+                </div>
+            </div>
+            <section class="formatoaliss sectionUbicacionServicios">
+                <div class="formatoaliss ubicacion">
+                    <div class="formatoaliss ubicacion-imagen">
+                        <img class="formatoaliss" src="../assets/img/hotelubicacion.jpg" alt="Ubicación" />
+                    </div>
+                    <h3 class="formatoaliss">Ubicación</h3>
+                    <p class="formatoaliss">La mejor ubicación de toda la ciudad. Localizado en la mejor zona financiera de la ciudad y a
+                        corta distancia de sitios históricos y de
+                        hermosos escenarios naturales.
+                    <p>
+                </div>
+                <div class="formatoaliss wi-fi">
+                    <div class="formatoaliss wi-fi-imagen">
+                        <img class="formatoaliss" src="../assets/img/hotelinternet.jpg" alt="Internet" />
+                    </div>
+                    <h3 class="formatoaliss">Internet</h3>
+                    <p class="formatoaliss">Hacemos de su estadía una experiencia plena y completa rodeada de todo lo necesario , por eso
+                        usted
+                        podrá disfrutar de nuestra Red Wi-fi en todas nuestras instalaciones.
+                    <p>
+                </div>
+            </section>
+            <section class="formatoaliss sectionAtencion">
+                <div class="formatoaliss atencion-personalizada">
+                    <div class="formatoaliss atencion-personalizada-imagen">
+                        <img class="formatoaliss" src="../assets/img/hotelatencionpersonalizada.jpg" alt="Atención Personalizada" style="object-fit: cover;"/>
+                    </div>
+                    <h3 class="formatoaliss">Atención Personalizada</h3>
+                    <p class="formatoaliss">Uno de nuestros principales objetivos es hacer que nuestros huéspedes reciban un trato personalizado
+                        cubriendo todas sus necesidades haciendo que se sientan como en casa.
+                    </p>
+                    <button class="formatoaliss botonzambrano" onclick="location.href='frmZambranoReclamo.html'">Realizar reclamo de atención al cliente</button>
+                </div>
+            </section>
+        </section>
     </div>
-    <script src="../assets/js/formularioZambrano.js"></script>
+    <div class="piedepagina container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col d-none d-md-block text-center">
+                            <figure>
+                                <a href="#">
+                                    <img class="img-fluid" src="../assets/img/logo.png" alt="Logo de Lux" width="250"/>
+                                </a>
+                            </figure>
+                        </div>
+                        <div id="columnapie" class="col text-center">
+                            <h2>SOBRE NOSOTROS</h2>
+                            <p>Contamos con amplias habitaciones, Wi-FI de alta velocidad, exclusividad y excelentes restaurantes en
+                                todo el Ecuador</p>
+                            <hr/>
+                            <address>
+                                <p>Av. 31 de Octubre Mz.113, Guayaquil 095358, Ecuador</p>
+                                <p><strong>Telf:</strong> 04-2709573 | reservaciones@hoteleslux.org.ec</p>
+                            </address>
+                        </div>
+                        <div id="redessocialmedia" class="col text-center">
+                            <p>Lux Hotel</p>
+                            <h2>Siguenos en</h2>
+                            <div class="red-social">
+                                <a style="text-decoration: violet;" href="#"><img src="../assets/ico/facebook.ico" alt="icono facebook"/></a>
+                                <a href="#"><img src="../assets/ico/twitter.ico" alt="icono twitter"/></a>
+                                <a href="#"><img src="../assets/ico/instagram.ico" alt="icono instagram"/></a>
+                                <a href="#"><img src="../assets/ico/whatsapp.ico" alt="icono whatsapp"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bannpie2 col-md-12">
+                    <small>&copy; 2021 <b>Lux Hotel</b> - Todos los Derechos Reservados.</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
