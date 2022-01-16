@@ -23,25 +23,25 @@
                 <form action="#">
                     <p>
                         <label>Nombre y Apellido:</label>
-                        <input class="caja" type="text" name="fullname">
+                        <input class="caja" type="text" name="fullname" id="nombreCompleto">
                     </p>
                     <p>
                         <label>Correo Eléctronico:</label>
-                        <input class="caja" type="email" name="email">
+                        <input class="caja" type="email" name="email" id="correo">
                     </p>
                     <p>
                         <label>Fecha fin de estadía:</label>
-                        <input class="caja" type="date">
+                        <input class="caja" type="date" id="fecha1">
                     </p>
                     <p>
                         
                         <label>Fecha de inicio de estadía:</label>
-                        <input class="caja" type="date">          
+                        <input class="caja" type="date" id="fecha2">          
                     </p>
                     <p>
                         
                         <label>Habitaciones</label>
-                        <select class="caja" name="Habitaciones">
+                        <select class="caja" name="Habitaciones" id="habitacion">
                             <option>Sencillas</option>
                             <option>Dobles</option>
                             <option>Plus King</option>
@@ -52,7 +52,7 @@
                     <p>
                         
                         <label>Adultos</label>
-                        <select class="caja" name="Adultos">
+                        <select class="caja" name="Adultos" id="adulto">
                             <option>1-2</option>
                             <option>2-6</option>
                             <option>6-10</option>
@@ -62,7 +62,7 @@
                     <p>
                         
                         <label>Niños</label>
-                        <select class="caja" name="Niños">
+                        <select class="caja" name="Niños" ud="niño">
                             <option>0-2</option>
                             <option>2-6</option>
                             <option>6-10</option>
@@ -70,7 +70,7 @@
                     </p>
                     <p class="block">
                        <label>Otros:</label> 
-                        <textarea class="caja" name="message" rows="3"></textarea>
+                        <textarea class="caja" name="message" id="otro" rows="3"></textarea>
                     </p>
                     <p class="block">
                         <button style="background: #b99937;">
@@ -94,6 +94,6 @@
         </div>
 
     </div>
-
+<script src="../assets/js/formularioPeralta.js"></script>
 </body>
 </html>
