@@ -72,6 +72,23 @@
     overflow: hidden;
 }
 
+.carousel-indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #D4AC2B;
+	opacity: .4;
+	border-radius: 0;
+}
+
+.carousel-indicadores .glider-dot:hover {
+	opacity: .7;
+}
+
+.carousel-indicadores .glider-dot.active {
+	opacity: 1;
+}
+
 /******************** INSTALACIONES ********************/
 .sectionInstalacionesHotel{
     background: #D4AC2B;
