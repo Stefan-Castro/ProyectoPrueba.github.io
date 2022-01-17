@@ -8,6 +8,9 @@
     <meta name="author" content="Alvaro Chiriguaya">
     <title>Promociones</title>
     <link rel="stylesheet" href="../assets/css/chiriguayaestilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../assets/css/encabezado.css" rel="stylesheet">
+
     <style>
 
     </style>
@@ -15,116 +18,208 @@
 </head>
 
 <body>
-    <div class="ContenedorPromociones">
-        <div class="NameHotel">
-            <h1>Lux Hotel <br>Promociones</h1>
+
+    <header class="cabecera">
+        <div class="container-fluid bg-dark">
+            <div class="row"> 
+                <div class="col-md-12 col-xl-10 my-auto">
+                    <nav class="navegacion navbar navbar-dark bg-dark navbar-expand-md"> 
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img class="d-inline-block align-top" width="103" height="61" src="../assets/img/logo.png"
+                                alt="Logo del HOTEL" />
+                            <h1 class="d-inline-block align-center" id="NombreHotel" style="font-size: 35px;">LUX HOTEL</h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+                            <ul class="navbar-nav text-center">
+                                <li class="nav-item"><a class="nav-link" href="AlissonZambranoHotelFlex.html">EL HOTEL</a></li>
+                                <li class="nav-item"><a class="nav-link" href="CheaBethServicios.html">SERVICIOS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Peralta_habitacion.html">HABITACIONES</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ChiriguayaAlvaroMP.html">PROMOCIONES</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-2 d-none d-xl-block my-auto text-center">
+                    <button type="button" class="boton justify-content-center align-items-center" style="padding: 4%;"
+                    onclick="location.href='html/FrmCastroRegistro.html'" >Registrarse/Ingresar</button>
+                </div>
+            </div>
         </div>
-        <div class="ContenedorSuperiorP">
-            <img class="opacidadImagen" id="imagen1" src="../assets/img/pscinaPrincipal.jpg" alt="imagen1" onmouseover="agrandarImagen1()" onmouseout="normalImagen1()">
-            <img class="opacidadImagen" id="imagen2" src="../assets/img/BodaPrincipal.jpg" alt="imagen2" onmouseover="agrandarImagen2()" onmouseout="normalImagen2()">
-            <img class="opacidadImagen" id="imagen3" src="../assets/img/DesayunoPrincipal.jpg" alt="imagen3" onmouseover="agrandarImagen3()" onmouseout="normalImagen3()">
+    </header>
+    <div style="margin-top: 8%; display: flow-root;">
+        <div class="ContenedorPromociones">
+            <!--<div class="NameHotel">
+                <h1>Promociones</h1>
+            </div>-->
+            <div class="ContenedorSuperiorP">
+                <img class="opacidadImagen" id="imagen1" src="../assets/img/pscinaPrincipal.jpg" alt="imagen1"
+                    onmouseover="agrandarImagen1()" onmouseout="normalImagen1()">
+                <img class="opacidadImagen" id="imagen2" src="../assets/img/BodaPrincipal.jpg" alt="imagen2"
+                    onmouseover="agrandarImagen2()" onmouseout="normalImagen2()">
+                <img class="opacidadImagen" id="imagen3" src="../assets/img/DesayunoPrincipal.jpg" alt="imagen3"
+                    onmouseover="agrandarImagen3()" onmouseout="normalImagen3()">
+            </div>
+        </div>
+    
+        <section style="margin-top: 1%;">
+            <div class="TextoIzquierda">
+                <h3>¿Cómo podemos atenderlo?</h3>
+                <h2>Promociones Especiales </h2>
+            </div>
+    
+            <div class="TextoCentral">
+                <p class="centro" onmouseover="textoCambiado()" onmouseout="textoNormal()">
+                    Guayaquil, Ecuador es un gran destino para vacacionar. <br>
+                    Lux Hotel es la mejor elección con sus grandes paquetes y promociones para mejorar su experiencia.
+                </p>
+            </div>
+            <div class="PaquetesP">
+                <p><b>Paquetes Promocionales</b></p>
+            </div>
+        </section>
+    
+    
+        <div>
+            <div class="CajasPromociones">
+                <img class="opacidadImagen fade_up" src="../assets/img/Desayunos.jpg" alt="Desayunos">
+                <div id="Caja1">
+                    <h2>Desayunos</h2>
+                    <p> Disfruta de nuestros exquisitos desayunos criollos y americanos, cualquier día de la
+                        semana. <br>
+                        <i>ofrecemos lo mejor para ti</i>
+    
+                    </p>
+                </div>
+                
+                <div class="tyitem text-center">
+                    <button type="button" class="boton" onclick="location.href='FrmChiriguayaReserva.html'">Reservar Ahora</button>
+                </div>
+
+                <!--<a href="FrmChiriguayaReserva.html"><button class="BotonReservar">Reservar</button></a>-->
+            </div>
+    
+            <div class="CajasPromociones">
+                <img class="opacidadImagen fade_up" src="../assets/img/boda.jpeg" alt="Boda">
+                <div id="Caja2">
+                    <h2>Bodas</h2>
+                    <p>Celebra tu boda con nosotros, te ofrecemos un espacio inolvidable con el mejor
+                        servicio y comida. <br>
+                        <i>ofrecemos lo mejor para ti</i>
+    
+                    </p>
+                </div>
+                <!--<a href="FrmChiriguayaReserva.html"><button class="BotonReservar">Reservar</button></a>-->
+                <div class="tyitem text-center">
+                    <button type="button" class="boton" onclick="location.href='FrmChiriguayaReserva.html'">Reservar Ahora</button>
+                </div>
+            </div>
+    
+            <div class="CajasPromociones">
+                <img class="opacidadImagen fade_up" src="../assets/img/NochesBodas.jpeg" alt="NocheBodas">
+                <div id="Caja3">
+                    <h2>Noche de Bodas</h2>
+                    <p>Tú lo sueñas, nosotros lo podemos hacer realidad. </p>
+                </div>
+                <div class="items">
+                    <nav>
+                        <ul class="listaItems">
+                            <li>Habitación Suite</li>
+                            <li>Botella de espumoso</li>
+                            <li>Fresas achocolatadas</li>
+                            <li>Arreglos florales</li>
+                            <li>Desayuno en la habitación</li>
+                            <li>Cena para 2 personas</li>
+                        </ul>
+                    </nav>
+                    <p>
+                        <i>ofrecemos lo mejor para ti</i>
+                    </p>
+                </div>
+    
+                <!--<a href="FrmChiriguayaReserva.html"><button class="BotonReservar">Reservar</button></a>-->
+                <div class="tyitem text-center">
+                    <button type="button" class="boton" onclick="location.href='FrmChiriguayaReserva.html'">Reservar Ahora</button>
+                </div>
+            </div>
+    
+            <div class="CajasPromociones">
+                <img class="opacidadImagen fade_up" src="../assets/img/fullDay.jpg" alt="Day">
+                <div id="Caja4">
+                    <h2>Full Day</h2>
+                    <p>Desconéctate de la rutina y relájate en nuestras instalaciones.</p>
+                </div>
+                <div class="items">
+                    <nav>
+                        <ul class="listaItems">
+                            <li>Entradas personales</li>
+                            <li>Uso de multiples toallas</li>
+                            <li>Uso de piscina</li>
+                            <li>Múltiples Bebidas</li>
+                            <li>Múltiples Bocaditos</li>
+                            <li>Arreglo floral pequeño</li>
+                        </ul>
+                    </nav>
+                    <p>
+                        <i>ofrecemos lo mejor para ti</i>
+                    </p>
+                </div>
+    
+                <!--<a href="FrmChiriguayaReserva.html"><button class="BotonReservar">Reservar</button></a>-->
+                <div class="tyitem text-center">
+                    <button type="button" class="boton" onclick="location.href='FrmChiriguayaReserva.html'">Reservar Ahora</button>
+                </div>
+            </div>
         </div>
     </div>
-
-    <section>
-        <div class="TextoIzquierda">
-            <h3>¿Cómo podemos atenderlo?</h3>
-            <h2>Promociones Especiales </h2>
-        </div>
-
-        <div class="TextoCentral">
-            <p class="centro" onmouseover="textoCambiado()" onmouseout="textoNormal()">
-                Guayaquil, Ecuador es un gran destino para vacacionar. <br>
-                 Lux Hotel es la mejor elección con sus grandes paquetes y promociones para mejorar su experiencia.
-            </p>
-        </div>
-        <div class="PaquetesP">
-            <p><b>Paquetes Promocionales</b></p>
-        </div>
-    </section>
-
-
-    <div>
-        <div class="CajasPromociones">
-            <img class="opacidadImagen fade_up" src="../assets/img/Desayunos.jpg" alt="Desayunos">
-            <div id="Caja1">
-                <h2>Desayunos</h2>
-                <p> Disfruta de nuestros exquisitos desayunos criollos y americanos, cualquier día de la
-                    semana. <br>
-                    <i>ofrecemos lo mejor para ti</i>
-                   
-                </p>
+    
+    <div class="piedepagina container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col d-none d-md-block text-center">
+                            <figure>
+                                <a href="#">
+                                    <img class="img-fluid" src="../assets/img/logo.png" alt="Logo de Lux" width="250"/>
+                                </a>
+                            </figure>
+                        </div>
+                        <div id="columnapie" class="col text-center">
+                            <h2>SOBRE NOSOTROS</h2>
+                            <p>Contamos con amplias habitaciones, Wi-FI de alta velocidad, exclusividad y excelentes restaurantes en
+                                todo el Ecuador</p>
+                            <hr/>
+                            <address>
+                                <p>Av. 31 de Octubre Mz.113, Guayaquil 095358, Ecuador</p>
+                                <p><strong>Telf:</strong> 04-2709573 | reservaciones@hoteleslux.org.ec</p>
+                            </address>
+                        </div>
+                        <div id="redessocialmedia" class="col text-center">
+                            <p>Lux Hotel</p>
+                            <h2>Siguenos en</h2>
+                            <div class="red-social">
+                                <a style="text-decoration: violet;" href="#"><img src="../assets/ico/facebook.ico" alt="icono facebook"/></a>
+                                <a href="#"><img src="../assets/ico/twitter.ico" alt="icono twitter"/></a>
+                                <a href="#"><img src="../assets/ico/instagram.ico" alt="icono instagram"/></a>
+                                <a href="#"><img src="../assets/ico/whatsapp.ico" alt="icono whatsapp"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <button class="BotonReservar" onclick="location.href='FrmChiriguayaReserva.html'">Reservar</button>
-        </div>
-
-        <div class="CajasPromociones">
-            <img class="opacidadImagen fade_up" src="../assets/img/boda.jpeg" alt="Boda">
-            <div id="Caja2">
-                <h2>Bodas</h2>
-                <p>Celebra tu boda con nosotros, te ofrecemos un espacio inolvidable con el mejor
-                    servicio y comida. <br>
-                    <i>ofrecemos lo mejor para ti</i>
-            
-                </p>
+            <div class="row">
+                <div class="bannpie2 col-md-12">
+                    <small>&copy; 2021 <b>Lux Hotel</b> - Todos los Derechos Reservados.</small>
+                </div>
             </div>
-            <button class="BotonReservar" onclick="location.href='FrmChiriguayaReserva.html'">Reservar</button>
-        </div>
-
-        <div class="CajasPromociones">
-            <img class="opacidadImagen fade_up" src="../assets/img/NochesBodas.jpeg" alt="NocheBodas">
-            <div id="Caja3">
-                <h2>Noche de Bodas</h2>
-                <p>Tú lo sueñas, nosotros lo podemos hacer realidad. </p>
-            </div>
-            <div class="items">
-                <nav>
-                    <ul class="listaItems">
-                        <li>Habitación Suite</li>
-                        <li>Botella de espumoso</li>
-                        <li>Fresas achocolatadas</li>
-                        <li>Arreglos florales</li>
-                        <li>Desayuno en la habitación</li>
-                        <li>Cena para 2 personas</li>
-                    </ul>
-                </nav>
-                <p>
-                    <i>ofrecemos lo mejor para ti</i> 
-                </p>
-            </div>
-
-            <button class="BotonReservar" onclick="location.href='FrmChiriguayaReserva.html'">Reservar</button>
-        </div>
-
-        <div class="CajasPromociones">
-            <img class="opacidadImagen fade_up" src="../assets/img/fullDay.jpg" alt="Day">
-            <div id="Caja4">
-                <h2>Full Day</h2>
-                <p>Desconéctate de la rutina y relájate en nuestras instalaciones.</p>
-            </div>
-            <div class="items">
-                <nav>
-                    <ul class="listaItems">
-                        <li>Entradas personales</li>
-                        <li>Uso de multiples toallas</li>
-                        <li>Uso de piscina</li>
-                        <li>Múltiples Bebidas</li>
-                        <li>Múltiples Bocaditos</li>
-                        <li>Arreglo floral pequeño</li>
-                    </ul>
-                </nav>
-                <p>
-                    <i>ofrecemos lo mejor para ti</i>
-                </p>
-            </div>
-
-            <button class="BotonReservar" onclick="location.href='FrmChiriguayaReserva.html'">Reservar</button>
-        </div>
+        </footer>
     </div>
-
-   <button class="boton-top">&#11014;</button> 
-  
+   <button class="boton-top">
+    <img src="../assets/img/arrow-up.svg" style="width: 80%; height: 60%;" alt="icon flecha arriba">
+   </button>
    <script src="../assets/js/JavaScriptA.js"></script>
    
 </body>
