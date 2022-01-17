@@ -14,6 +14,8 @@
     justify-content: center;
     text-align: center;
     font-family: Lato;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .carousel-imagenHotel img{
@@ -23,11 +25,17 @@
     padding: 0;
 }
 
+.sectionBienvenidaHotel{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .titulobienvenida{
-    background: #F3ED9E;
     color: goldenrod;
     font-style: italic;
     font-size: 150%;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .mensajeBienvenida{
@@ -90,18 +98,20 @@
 }
 
 /******************** INSTALACIONES ********************/
-
-.sectionInstalacionesHotel{
-    background: #D4AC2B;
-}
-
 .sectionInstalacionesHotel img{
     width: 80%;
     height: 90%;
 }
 
+.sectionInstalacionesHotel{ 
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
 .tituloinstalaciones{
-    background: white;
+    /*background: #E6DF9A;*/
     justify-content: center;
     text-align: center;
     font-style:italic;
@@ -111,17 +121,28 @@
 
 .tituloinstalaciones h4{
     color: black;
+    margin:0;
+}
+
+.tituloinstalaciones h2{
+    margin: 0;
+    padding-top: 0;
 }
 
 .tipo-de-intalaciones{
-    background: #E6DF9A;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .restaurante{
     background: white;
+    border: 6px solid #b99937;
+    border-radius: 2%;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -134,14 +155,17 @@
 
 .restaurante-imagen{
     background: #F3ED9E;
-    border: 6px solid #b99937;
+    border-radius: 2%;
     margin: 0;
     padding: 0;
     height: 227px;
+    justify-content: center;
 }
 
 .salon-evento{
     background: white;
+    border: 6px solid #b99937;
+    border-radius: 2%;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -154,7 +178,7 @@
 
 .salon-evento-imagen{
     background: #F3ED9E;
-    border: 6px solid #b99937;
+    border-radius: 2%;
     margin: 0;
     padding: 0;
     height: 227px;
@@ -162,6 +186,8 @@
 
 .piscina{
     background: white;
+    border: 6px solid #b99937;
+    border-radius: 2%;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -174,7 +200,7 @@
 
 .piscina-imagen{
     background: #F3ED9E;
-    border: 6px solid #b99937;
+    border-radius: 2%;
     margin: 0;
     padding: 0;
     height: 227px;
@@ -183,14 +209,19 @@
 /******************** UBICACIÓN - SERVICIOS ********************/
 
 .sectionUbicacionServicios{
-    background: #E6DF9A;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .ubicacion{
     background: white;
+    border: 6px solid #b99937;
+    border-radius: 2%;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -203,7 +234,7 @@
 
 .ubicacion-imagen{
     background: #F3ED9E;
-    border: 6px solid #b99937;
+    border-radius: 2%;
     margin: 0;
     padding: 0;
     height: 227px;
@@ -211,6 +242,8 @@
 
 .wi-fi{
     background: white;
+    border: 6px solid #b99937;
+    border-radius: 2%;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -223,7 +256,7 @@
 
 .wi-fi-imagen{
     background: #F3ED9E;
-    border: 6px solid #b99937;
+    border-radius: 2%;
     margin: 0;
     padding: 0;
     height: 227px;
@@ -232,14 +265,19 @@
 /******************** ATENCIÓN ********************/
 
 .sectionAtencion{
-    background: #E6DF9A;
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .atencion-personalizada{
     background: white;
+    border: 6px solid #b99937;
+    border-radius: 2%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -251,7 +289,7 @@
 
 .atencion-personalizada-imagen{
     background: #F3ED9E;
-    border: 6px solid #b99937;
+    border-radius: 2%;
     margin: 0;
     padding: 0;
     height: 227px;
