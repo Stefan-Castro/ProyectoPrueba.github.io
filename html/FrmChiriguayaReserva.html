@@ -28,22 +28,33 @@
             <div class="ladoDerecho">
                 <form id="formReserva" onsubmit="return validarReserva()">
                     <h1>Reservar Promoción</h1>
-                    <input class="caja" type="text" name="Nombre" placeholder="Nombres">
-                    <p></p>
-                    <input class="caja" type="text" name="Apellido" placeholder="Apellidos">
-                    <input class="caja" type="text" name="Teléfono" placeholder="Teléfono">
-                    <input class="caja" type="text" name="Correo" placeholder="Correo">
-
-                    <p>Paquete Promocional</p>
-                    <select class="caja" name="paquetes" id="opciones">
-                        <option value="Desayunos">Desayunos </option>
-                        <option value="Bodas">Bodas </option>
-                        <option value="Noche de Bodas">Noche de bodas </option>
-                        <option value="Full day">Full day</option>
-                    </select>
-                    <input class="caja" type="date" name="Fecha" id="fecha">
-                    <input class="caja" type="time" name="Horma" id="hora">
-                    <p id="términos">Estoy de acuerdo con <a href="#">Términos y condiciones</a></p>
+                    <div>
+                        <input class="caja" id="nombres" type="text" name="Nombre" placeholder="Nombres">
+                    </div>
+                    <div>
+                        <input class="caja" id="apellidos" type="text" name="Apellido" placeholder="Apellidos">
+                    </div>
+                    <div>
+                        <input class="caja" id="telefono" type="text" name="Teléfono" placeholder="Teléfono">
+                    </div>
+                    <div>
+                        <input class="caja" id="correo" type="text" name="Correo" placeholder="Correo">
+                    </div>
+                    <div>
+                        <p>Paquete Promocional</p>
+                        <select class="caja" name="paquetes" id="opciones">
+                            <option value="Desayunos">Desayunos </option>
+                            <option value="Bodas">Bodas </option>
+                            <option value="Noche de Bodas">Noche de bodas </option>
+                            <option value="Full day">Full day</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="caja" type="date" name="Fecha" id="fecha">
+                    </div>
+                    <div>
+                        <input class="caja" type="time" name="Horma" id="hora">
+                    </div>
                     <div class="botonesFormularioReservaP">
                         <input class="botón" id="botonReservaP" type="submit" value="Reservar">
                         <input class="botón" id="botonCancelarRservaP" type="button" value="Cancelar" onclick="location.href='ChiriguayaAlvaroMP.html'">
