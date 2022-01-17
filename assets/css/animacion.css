@@ -8,6 +8,9 @@
     transform: translateY(150px);
   }
 
+  .revealabajo{
+    transform: translateY(-150px);
+  }
   
   .revealizquierda{
     transform: translateX(150px);
