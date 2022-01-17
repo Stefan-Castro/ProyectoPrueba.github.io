@@ -68,7 +68,6 @@
     border-color: #8f6b00;
   }
 
-
   /*** PIE DE PAGINA***/
   .piedeimagen{
     background-color: rgba(45, 44, 44, 0.6); 
@@ -161,4 +160,26 @@
   .red-social a:hover {
     background: #49330a;
   }
+
+  .tyboton{
+    color: #fff;
+    background-color: #b99937;
+    padding: 1%;
+    border-color: #b99937;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .tyboton:hover {
+    color: #fff;
+    background-color: #997300;
+    border-color: #8f6b00;
+  }
+
+  .tyitem {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
 
