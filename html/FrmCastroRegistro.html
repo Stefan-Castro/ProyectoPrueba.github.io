@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Html5, Lux Hotel, registro, Formularios">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/formulariomaster.css"> 
     <title>Castro Registro</title>
 </head>
@@ -14,20 +16,61 @@
                 <img src="../assets/img/LogotipoSinFondo.png" class="logo" alt="Logotipo Lux Hotel"/>
             </div>
             <div class="ladoDerecho">
-                <form action="#">
-                    <h1>Creación de Cuenta</h1>
-                    <h2>Registrese en Lux Hotel</h2>
-                    <p>E-mail</p>
-                    <input type="text" class="caja" name="e-mail" required />
-                    <p>C.I - Pasaporte</p>
-                    <input type="text" class="caja" name="nombre" required/>
-                    <p>Nombres Completos</p>
-                    <input type="text" class="caja" name="nombre" required/>
-                    <p>Contraseña</p>
-                    <input type="password" class="caja" name="contrase" required/>
-                    <p>Confirmar Contraseña</p>
-                    <input type="password" class="caja" name="contrasecf" required/>
+                
+                <form action="#" class="formulario" id="formulario">
+                    <div>
+                        <h1>Creación de Cuenta</h1>
+                        <h2>Registrese en Lux Hotel</h2>
+                    </div>
 
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">E-mail</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__ci">
+                        <label for="ci" class="formulario__label">C.I - Pasaporte</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="ci" id="ci" placeholder="0953581972">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El C.I o pasaporte solo puede contener numeros y el maximo son 14 dígitos.</p>
+                    </div>
+
+                    <!--GRUPO DE NOMBRES-->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Alex Castro">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El Nombre tiene que ser mayor a 1 digito y solo puede contener letras.</p>
+                    </div>
+
+                    <!-- Grupo: Contraseña -->
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label for="password" class="formulario__label">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                    </div>
+
+                    <!-- Grupo: Contraseña 2 -->
+                    <div class="formulario__grupo" id="grupo__password2">
+                        <label for="password2" class="formulario__label">Confirmar Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password2" id="password2">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                    </div>
+ 
                     <p>Tipo de tarjeta</p>
                     
                     <div class="cajaalex">
@@ -42,15 +85,38 @@
                         <p>Fecha Nac.</p>
                         <input type="date" class="caja"  required />
                     </div>
-                    <label><input type="checkbox">Recordar datos</label>
+                    
+                    <!-- Grupo: Terminos y Condiciones -->
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los Terminos y Condiciones
+                        </label>
+                    </div>
+
+                    <div>
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena todos los campos.</p>
+                        </div>
+                    </div>
+                    
                     <div class="botonesFormulariocuenta">
-                        <input class="botón" id="botoncrearC" type="button" value="Crear">
-                        <input class="botón" id="botonCancelar" type="button" value="Cancelar" onclick="location.href='../CastroAlexanderIndex.html'">
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="submit" class="formulario__btn">Enviar</button>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Cuenta creada exitosamente!</p>
+                        </div>
+
+                        <div>
+                            <button type="button" class="formulario__btn" onclick="location.href='../index.html'">Cancelar</button>
+                        </div>
                     </div>
                    
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="../assets/js/validacionformulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
